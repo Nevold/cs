@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shelter-pets</title>
+  <link href="stylepets.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../../assets/favicon.png">
+</head>
+
+<body>
+  <div class="popup block-hidden"></div>
+  <div id="popup-pets" class="popup block-hidden">
+    <div class="pets-popup-container">
+      <div class="buttom-close"></div>
+      <div id="pet-image" class="pet-image"></div>
+      <div id="pet-info" class="pet-info">
+        <p id="name" class="name"></p>
+        <div class="wrapper-type">
+          <span id="type" class="type"></span>
+          -
+          <span id="breed" class="breed"></span>
+        </div>
+        <p id="description" class="description"></p>
+        <ul class="wrapper-pet-text">
+          <li><span class="pet-text">Age:</span> <span id="age" class="age"></span></li>
+          <li><span class="pet-text">Inoculations:</span> <span id="inoculations" class="inoculations"></span></li>
+          <li><span class="pet-text">Diseases:</span> <span id="diseases" class="diseases"></span></li>
+          <li><span class="pet-text">Parasites:</span> <span id="parasites" class="parasites"></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container container-header">
+    <header class="main-header position">
+      <nav class="main-header-nav">
+        <h1 class="visually-hidden">Cozy House</h1>
+        <div class="main-header-nav-wrapper">
+          <div id="header-logo" class="main-header-logo-wrapper">
+            <p class="text-title">
+              <a id="link-main-logo" class="link-item link-main-logo" href="../main/index.html">Cozy House</a>
+            </p>
+            <p class="text-subtitle">Shelter for pets in Boston</p>
+          </div>
+          <div class="site-navigation-wrapper">
+            <ul class="site-navigation">
+              <li class="site-navigation-item">
+                <a class="link-item" href="../main/index.html">About the shelter</a>
+              </li>
+              <li class="site-navigation-item">
+                <a class="link-item" href="#">Our pets</a>
+              </li>
+              <li class="site-navigation-item">
+                <a class="link-item" href="../main/index.html#help-shelter">Help the shelter</a>
+              </li>
+              <li class="site-navigation-item">
+                <a class="link-item" href="#footer">Contacts</a>
+              </li>
+            </ul>
+            <div class="burger">
+              <div class="line"></div>
+              <div class="line center-line"></div>
+              <div class="line"></div>
+            </div>
+            <nav id="navigation" class="menu menu-translate-down block-hidden">
+              <!-- remove if possible -->
+              <!-- <div id="burger-logo" class="main-header-logo-wrapper burger-logo">
+                <p class="text-title-burger">
+                  <a href="../main/index.html">Cozy House</a>
+                </p>
+                <p class="text-subtitle-burger">Shelter for pets in Boston</p>
+              </div> -->
+              <ul class="site-navigation-burger">
+                <li class="site-navigation-item-burger">
+                  <a class="link-item-burger" href="../main/index.html">About the shelter</a>
+                </li>
+                <li class="site-navigation-item-burger">
+                  <a id="current-page" class="link-item-burger" href="#header">Our pets</a>
+                </li>
+                <li class="site-navigation-item-burger">
+                  <a id="link-help" class="link-item-burger" href="../main/index.html#help-shelter">Help the shelter</a>
+                </li>
+                <li class="site-navigation-item-burger">
+                  <a id="link-footer" class="link-item-burger" href="#footer">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+  <section id="header" class="friends">
+    <div class="container">
+      <div class="friends-wrapper">
+        <div class="friends-wrapper-text">
+          <h2 class="friends-title">
+            Our friends who <br>
+            are looking for a house
+          </h2>
+        </div>
+        <div class="friends-wrapper-image-all">
+          <div id="katrine" class="friends-wrapper-image">
+            <img class="friends-slider-image pet-visible-opacity" src="#" width="270" height="270" alt="pets-katrine">
+            <p class="pets-name">Katrine</p>
+            <div class="friends-buttom-learn">Learn more</div>
+          </div>
+          <div id="jennifer" class="friends-wrapper-image">
+            <img class="friends-slider-image pet-visible-opacity" src="#" width="270" height="270" alt="pets-katrine">
+            <p class="pets-name pet-visible-opacity">Jennifer</p>
+            <div class="friends-buttom-learn">Learn more</div>
+          </div>
+          <div id="woody" class="friends-wrapper-image">
+            <img class="friends-slider-image pet-visible-opacity" src="#" width="270" height="270" alt="pets-katrine">
+            <p class="pets-name pet-visible-opacity">Woody</p>
+            <div class="friends-buttom-learn">Learn more</div>
+          </div>
+          <div id="sophia" class="friends-wrapper-image">
+            <img class="friends-slider-image pet-visible-opacity" src="#" width="270" height="270" alt="pets-katrine">
+            <p class="pets-name pet-visible-opacity">Sophia</p>
+            <div class="friends-buttom-learn">Learn more</div>
+          </div>
+
+          <div id="timmy" class="friends-wrapper-image">
+            <img class="friends-slider-image pet-visible-opacity" src="#" width="270" height="270" alt="pets-timmy">
+            <p class="pets-name pet-visible-opacity">Timmy</p>
+            <div class="friends-buttom-learn">Learn more</div>
+          </div>
+          <div id="charly" class="friends-wrapper-image">
+            <img class="friends-slider-image pet-visible-opacity" src="#" width="270" height="270" alt="pets-charly">
+            <p class="pets-name pet-visible-opacity">Charly</p>
+            <div class="friends-buttom-learn">Learn more</div>
+          </div>
+          <div id="scarlett" class="friends-wrapper-image">
+            <img class="friends-slider-image pet-visible-opacity" src="#" width="270" height="270" alt="pets-scarlet">
+            <p class="pets-name pet-visible-opacity">Scarlett</p>
+            <div class="friends-buttom-learn">Learn more</div>
+          </div>
+          <div id="freddie" class="friends-wrapper-image">
+            <img class="friends-slider-image pet-visible-opacity" src="#" width="270" height="270" alt="pets-katrine">
+            <p class="pets-name pet-visible-opacity">Freddie</p>
+            <div class="friends-buttom-learn">Learn more</div>
+          </div>
+        </div>
+        <div class="friends-buttom-wrapper">
+          <button id="left-left-arrow" class="friends-slide-arrow left-arrow arrow-border-disable" type="button"
+            disabled>&lt; &lt;</button>
+          <button id="left-arrow" class="friends-slide-arrow left-arrow arrow-border-disable" type="button"
+            disabled>&lt;</button>
+          <button id="center-arrow" class="friends-slide-arrow center-arrow" type="button">1</button>
+          <button id="right-arrow" class="friends-slide-arrow right-arrow" type="button">&gt;</button>
+          <button id="right-right-arrow" class="friends-slide-arrow right-arrow" type="button">&gt; &gt;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer" id="footer">
+    <div class="main-footer-wrapper">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="wrapper">
+            <h3>For questions and suggestions</h3>
+            <p>
+              <a class="mail" href="mailto:email@shelter.com"> <img class="mail-img" src="../../assets/icon-email.svg"
+                  alt="email">email@shelter.com</a>
+            </p>
+            <p>
+              <a class="tel" href="tel:+136745677554"> <img src="../../assets/phone.png" alt="phone">+13 674 567 75
+                54</a>
+            </p>
+          </div>
+          <div class="wrapper wrapper-waiting">
+            <h3>We are waiting for your visit</h3>
+            <p>
+              <a class="first-chek"
+                href="https://www.google.ru/maps/place/F%C3%B8roya+N%C3%A1tt%C3%BArugripasavn/@62.0332117,-6.7819227,15z/data=!4m5!3m4!1s0x48bc2e061799ccaf:0x1cb9ad7c312fee8a!8m2!3d62.0320963!4d-6.7649174"
+                target="_blank">
+                <img src="../../assets/pin.png" alt="pin">1 Central Street, Boston (entrance from the store)</a>
+            </p>
+            <p>
+              <a class="second-chek"
+                href="https://www.google.ru/maps/place/%D0%93%D0%BE%D1%80%D0%B0+%D0%9F%D0%B0%D0%B3%D0%B5%D1%82/@-54.4428153,-36.5505021,15.75z/data=!4m5!3m4!1s0xbecb6a3279ee9817:0x6cbca24be5dd45aa!8m2!3d-54.4408232!4d-36.5552902"
+                target="_blank">
+                <img src="../../assets/pin.png" alt="pin">18 South Park, London
+              </a>
+            </p>
+          </div>
+          <div class="footer-wrapper-image"><img src="../../assets/footer-puppy.png" alt="footer-puppy"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+
+</html>
