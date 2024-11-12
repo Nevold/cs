@@ -1,12 +1,18 @@
 @font-face {
   font-family: 'Arial';
-  src: url('../../assets/fonts/arial/arial-regular.ttf') format('truetype'), url('../../assets/fonts/arial/arial-bold.ttf') format('truetype'),
-    url('../../assets/fonts/arial/arial-italic.ttf') format('truetype'), url('../../assets/fonts/arial/arial-bold-italic.ttf') format('truetype');
+  src:
+    url('../../assets/fonts/arial/arial-regular.ttf') format('truetype'),
+    url('../../assets/fonts/arial/arial-bold.ttf') format('truetype'),
+    url('../../assets/fonts/arial/arial-italic.ttf') format('truetype'),
+    url('../../assets/fonts/arial/arial-bold-italic.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Georgia';
-  src: url('../../assets/fonts/georgia/georgia-regular.ttf') format('truetype'), url('../../assets/fonts/georgia/georgia-bold.ttf') format('truetype'),
-    url('../../assets/fonts/georgia/georgia-italic.ttf') format('truetype'), url('../../assets/fonts/georgia/georgia-bold-italic.ttf') format('truetype');
+  src:
+    url('../../assets/fonts/georgia/georgia-regular.ttf') format('truetype'),
+    url('../../assets/fonts/georgia/georgia-bold.ttf') format('truetype'),
+    url('../../assets/fonts/georgia/georgia-italic.ttf') format('truetype'),
+    url('../../assets/fonts/georgia/georgia-bold-italic.ttf') format('truetype');
 }
 
 html {
@@ -131,15 +137,6 @@ p {
   position: relative;
   z-index: 4;
   cursor: pointer;
-}
-
-.line {
-  width: 28px;
-  border: 1px solid#f1cdb3;
-}
-
-.center-line {
-  margin: 8px 0;
 }
 
 /* pets */
@@ -284,7 +281,8 @@ p {
 /* footer */
 
 .main-footer-wrapper {
-  background: url(../../assets/noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
+  background: url(../../assets/noise_lines_transparent@2X.png),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
 }
 .footer-wrapper {
   display: flex;
@@ -707,7 +705,7 @@ p {
 
   .main-header-nav {
     height: auto;
-    padding: 31px 30px;
+    /* padding: 31px 30px; */
   }
   .friends-wrapper {
     padding-top: 141px;
@@ -747,7 +745,8 @@ p {
     margin-top: 69px;
   }
   .main-footer-wrapper {
-    background: url(../../assets/noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
+    background: url(../../assets/noise_lines_transparent@2X.png),
+      radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
   }
 }
 @media screen and (max-width: 767px) {
