@@ -63,6 +63,7 @@ p {
 .main-header-nav-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .main-header {
@@ -79,7 +80,7 @@ p {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #181c29;
-  margin-left: 8px;
+  margin-left: 10px;
 }
 .img-logo {
   width: 24px;
@@ -88,26 +89,43 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: -1px;
 }
 .main-header-logo-wrapper {
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 141px;
-  height: 40px;
   border-radius: 12px;
-  border: 1px solid black;
+  margin-left: 82px;
+  padding: 8px 20px;
+  /* flex-basis: 133px; */
+  flex-shrink: 0;
 }
 
 .site-navigation {
   display: flex;
-  width: 443px;
-  justify-content: space-between;
-}
-.site-navigation {
+  /* width: 443px; */
+  justify-content: flex-end;
+  align-items: center;
   list-style-type: none;
 }
+
+.site-navigation-wrapper {
+  margin-right: 82px;
+  width: 100%;
+}
+
+.site-navigation-item {
+  padding: 8px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin-left: 9px;
+}
+
 .link-item {
   font-family: 'Montserrat';
   font-style: normal;
@@ -119,22 +137,34 @@ p {
   color: #181c29;
   text-decoration: none;
 }
-.link-item:hover {
+
+.site-navigation-item:hover,
+.link-item:hover,
+.main-header-logo-wrapper:hover {
   transition: all 0.5s ease-out;
-  color: #fafafa;
 }
 
-.link-item:active {
+.link-item:hover,
+.text-title:hover {
+  color: #ff0000;
+}
+
+.site-navigation-item:hover,
+.main-header-logo-wrapper:hover {
+  background-color: #ecf3f8;
+}
+
+/* .link-item:active {
   transition: all 0.5s ease-out;
   color: #fafafa;
   border-bottom: 3px solid #f1cdb3;
-}
+} */
 
-.site-navigation-item:first-child .link-item {
+/* .site-navigation-item:first-child .link-item {
   color: #fafafa;
   border-bottom: 3px solid #f1cdb3;
   cursor: default;
-}
+} */
 .burger {
   display: none;
   position: relative;
