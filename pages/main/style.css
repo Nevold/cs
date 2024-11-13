@@ -176,62 +176,95 @@ p {
 
 .promo-wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  /* justify-content: space-between;
   flex-wrap: wrap;
-  align-content: center;
+  align-content: center; */
+  width: 100%;
+  min-height: 524px;
+  background-image: url('../../assets/image/bg-ball.jpg');
+  /* background-size: cover; */
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px 20px 0px 0px;
+  overflow: hidden;
 }
 
 .promo-text-column {
-  margin-top: 218px;
+  /* margin-top: 218px; */
+  margin: 0 auto;
 }
-.promo-wrapper-image {
-  margin-top: 91px;
-  height: 726px;
-}
-.promo-title {
-  display: block;
-  font-family: Georgia;
+
+.promo-title-top,
+.promo-title-bottom {
+  max-width: 426px;
+  font-family: 'Allura';
   font-style: normal;
-  font-weight: normal;
-  font-size: 44px;
-  line-height: 130%;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.05em;
   color: #ffffff;
-  width: 310px;
+  margin: 0 auto;
 }
+
+.promo-title-top {
+  margin-top: 121px;
+}
+
+.promo-title-bottom {
+  margin-top: 14px;
+}
+
 .promo-text {
-  font-family: Arial;
+  max-width: 426px;
+  font-family: 'Montserrat';
   font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 160%;
-  color: #cdcdcd;
-  width: 460px;
-  margin-top: 42px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 12px;
 }
-.button-link {
-  font-family: Georgia;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 130%;
-  letter-spacing: 0.06em;
-  color: #292929;
-  text-decoration: none;
-}
-.button {
-  margin-top: 41px;
-  width: 207px;
-  height: 52px;
-  background-color: #f1cdb3;
+
+.promo-button {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  border-radius: 100px;
+  width: 235px;
+  height: 56px;
+  background: #181c29;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
 }
-.button:hover {
-  transition: all 0.5s ease-out;
+
+.promo-button-link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.promo-button:hover {
+  background-color: #ffffff;
+  transition: 0.5s ease-out;
   cursor: pointer;
-  background-color: #fddcc4;
+}
+.promo-button:hover .promo-button-link {
+  color: #181c29;
+  transition: 0.5s ease-out;
 }
 /* About */
 
@@ -1409,3 +1442,7 @@ p {
     display: none !important;
   }
 } */
+
+/* Hero Section */
+
+/* Auto layout */
