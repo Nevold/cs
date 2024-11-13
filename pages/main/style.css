@@ -183,7 +183,6 @@ p {
   width: 100%;
   min-height: 524px;
   background-image: url('../../assets/image/bg-ball.jpg');
-  /* background-size: cover; */
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px 20px 0px 0px;
@@ -269,46 +268,68 @@ p {
 /* About */
 
 .about-wrapper {
-  display: flex;
-  padding-bottom: 97px;
-  flex-wrap: wrap;
-}
-.about-pets {
-  width: 300px;
+  width: 100%;
+  min-height: 648px;
+  background-image: url('../../assets/image/about-img.jpg');
   background-position: center;
-  margin-left: 175px;
-  margin-top: 81px;
-}
-.about-wrapper-column {
-  width: 430px;
-  margin-left: 120px;
-  margin-top: 95px;
-}
-.about-title {
-  font-family: Georgia;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 35px;
-  line-height: 129%;
-  letter-spacing: 0.06em;
-  color: #545454;
-  width: 390px;
-  padding: 0;
-  margin: 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
-.about-text {
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 160%;
-  color: #4c4c4c;
-  margin-top: 26px;
+.about-container {
+  width: 100%;
+  min-height: 528px;
+  /* display: flex; */
 }
 
-.about-text p:last-child {
-  margin-top: 25px;
+.about-text-container {
+  background-color: #ecf3f8;
+  border-radius: 20px;
+}
+
+.about-text-top {
+  font-family: 'Allura';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  color: #ff4646;
+}
+
+.about-text-center {
+  max-width: 426px;
+  height: 72px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 152%;
+  /* or 36px */
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #181c29;
+}
+
+.about-text-bottom {
+  max-width: 426px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 148%;
+  /* or 24px */
+  color: #181c29;
+}
+
+.about-img {
+  max-width: 638px;
+  height: 528px;
+  border-radius: 20px;
+  background-image: url('../../assets/image/santa.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 /* Our Friends */
