@@ -341,154 +341,104 @@ p {
   overflow: hidden;
 }
 
-/* Our Friends */
+/* Slider */
 
-.friends {
-  background: #f6f6f6;
+.slider-container {
+  width: 100%;
+  min-height: 488px;
+  background-image: url('../../assets/image/slider-img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
-.friends-wrapper {
+
+.slider-text-up {
+  font-family: 'Allura';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-top: 61px;
+}
+
+.slider-text-center {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 152%;
+  text-align: center;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 13px;
+}
+
+/* .friends-wrapper {
   padding-top: 79px;
   padding-bottom: 100px;
-}
-.friends-wrapper-slide {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 59px;
-  flex-wrap: wrap;
+} */
+.slider-wrapper {
+  margin-top: 19px;
+  margin-left: 67px;
 }
 
-.friends-title {
-  width: 33, 33334%;
-  padding-left: 2px;
-  margin: 0 auto;
-  font-family: Georgia;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 35px;
-  line-height: 130%;
-  letter-spacing: 0.06em;
-  color: #545454;
-  text-align: center;
-}
-.friends-slide-arrow {
-  width: 51px;
-  height: 51px;
-  border: 2px solid #f1cdb3;
-  box-sizing: border-box;
-  border-radius: 100px;
-  margin-bottom: 2px;
-  outline: none !important;
-}
-.friends-slide-arrow:hover {
-  transition: all 0.5s ease-out;
-  cursor: pointer;
-  background: #fddcc4;
-}
 .carusel {
-  max-width: 990px;
-  flex-grow: 1;
   overflow: hidden;
   position: relative;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+
   flex-grow: 1;
 }
 
-.friends-wrapper-image-all {
-  max-width: 990px;
+.slider-wrapper-image-all {
+  /* max-width: 990px;
   display: none;
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto; */
 }
 
-.friends-wrapper-image {
-  width: 270px;
-  height: 435px;
-  background: #fafafa;
-  border-radius: 9px;
-}
-.friends-wrapper-image:hover {
-  transition: all 0.5s ease-out;
-  cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.slider-wrapper-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
 }
 
-.friends-wrapper-image:hover .friends-buttom-learn {
-  transition: all 0.5s ease-out;
-  background: #fddcc4;
-  border-color: #fddcc4;
-}
-
-.pets-name {
-  font-family: Georgia;
+.slider-logo-text {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat';
   font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 23px;
+  font-weight: 600;
+  font-size: 77px;
+  line-height: 98px;
   text-align: center;
-  letter-spacing: 0.06em;
-  color: #545454;
-  margin-top: 27px;
-  margin-left: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 3px;
 }
-.friends-buttom-learn {
-  margin: 0 auto;
-  border: 2px solid #f1cdb3;
-  box-sizing: border-box;
-  border-radius: 100px;
-  height: 52px;
-  width: 187px;
-  margin-top: 30px;
-  padding-left: 1px;
-}
-.friends-buttom-learn {
+
+.slider-image {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 100px;
-  font-family: Georgia;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 130%;
-  letter-spacing: 0.06em;
-  color: #292929;
+  padding: 0px;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  margin-left: 18px;
 }
-.friends-buttom-learn:hover {
-  transition: all 0.5s ease-out;
-  cursor: pointer;
-  background: #fddcc4;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
-}
-.friends-buttom-get {
-  width: 261px;
-  height: 52px;
-  background: #f1cdb3;
-  border-radius: 100px;
-  font-family: Georgia;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 130%;
-  letter-spacing: 0.06em;
-  color: #292929;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  margin-top: 60px;
-  padding-left: 1px;
-}
-.friends-buttom-get:hover {
-  transition: all 0.5s ease-out;
-  cursor: pointer;
-  background: #fddcc4;
-}
+
 /* help */
 
 .help-wrapper-text {
@@ -954,11 +904,11 @@ p {
 /* end popup */
 
 /* Carusel */
-.active-pets {
+.active-slide {
   display: flex;
   animation: 0.3s ease-in-out;
 }
-.next-pets {
+.next-slide {
   display: flex;
   position: absolute;
   top: 0;
