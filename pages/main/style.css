@@ -277,14 +277,16 @@ p {
 }
 
 .about-container {
-  width: 100%;
   min-height: 528px;
-  /* display: flex; */
+  display: flex;
+  background-color: #ecf3f8;
+  border-radius: 20px;
+  margin: 60px 82px;
 }
 
 .about-text-container {
-  background-color: #ecf3f8;
-  border-radius: 20px;
+  width: 638px;
+  height: 528px;
 }
 
 .about-text-top {
@@ -323,7 +325,7 @@ p {
 }
 
 .about-img {
-  max-width: 638px;
+  width: 638px;
   height: 528px;
   border-radius: 20px;
   background-image: url('../../assets/image/santa.jpg');
