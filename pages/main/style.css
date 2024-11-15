@@ -474,6 +474,33 @@ p {
   transition: all 0.5s ease-out;
   cursor: pointer;
 }
+
+.arrow-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 19px;
+  margin-right: 82px;
+}
+
+.wrapper-arrow {
+  margin-left: 20px;
+}
+
+.slider-arrow:disabled {
+  border: 1px solid #ffffff66;
+  background-color: transparent;
+  cursor: default;
+  pointer-events: none;
+}
+
+.slider-arrow:disabled .left-arrow-img,
+.slider-arrow:disabled .right-arrow-img {
+  filter: brightness(0) saturate(100%) invert(97%) sepia(5%) saturate(1631%) hue-rotate(295deg) brightness(106%)
+    contrast(90%);
+  cursor: default;
+  pointer-events: none;
+}
+
 /* help */
 
 .help-wrapper-text {
